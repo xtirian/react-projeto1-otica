@@ -1,0 +1,64 @@
+.capa {        
+    background-image: url('/public/assets/capa.png');    
+    background-repeat: no-repeat;
+    /* lembrar de usar o box size cover para cobrir a tela toda */
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    /* Mandei uma mensagem para  */
+    
+    
+}
+
+/* .capa .limitarSecao {background: linear-gradient(47deg, rgba(0, 1, 19, 0.5) 0%, rgba(4, 6, 29, 0.3) 80%, rgba(4, 6, 29, 0.8) 100%);} */
+
+.capa div {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Anybody', 'Cedarville Cursive';
+}
+
+.capa p,
+.capa h1 {
+    max-width: 500px;
+}
+
+.capa p {
+    color: rgb(196,196,196);
+    font-size: 36px;
+}
+
+.capa h1 {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    letter-spacing: 5px;
+    line-height: 70px;
+    font-size: 60px;
+}
+
+
+/* Agora começam as mediaquerries */
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+        max-width: 350px;
+    }
+    .capa p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .capa { 
+        background-position: 89% center;
+    }
+
+    .capa .limitarSecao {background-color: rgba(0, 0, 0, 0.6);}
+
+}

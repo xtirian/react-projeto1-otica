@@ -1,0 +1,58 @@
+#contato  {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding:  100px 20px;
+    background-color: #05031b;    
+}
+
+.grade {
+    display: flex;
+    justify-content: center;
+    text-align: left
+}
+
+.grade h4 {
+    margin: 50px 0 20px 10px;
+}
+
+.infosGrade {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;    
+}
+
+.infoLinha {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.infoImagem,
+.infoImagem img {
+    margin: 0;
+    width: 18px;    
+}
+
+.infoLinha p{
+    font-size: 14px;
+    margin: 0 0 0 10px;
+    padding: 0 ;    
+}
+
+@media screen and (max-width: 768px) {
+    #contato {        
+        padding: 60px 20px;        
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #contato {        
+        padding: 0 10px;        
+    }
+    .grade {
+        flex-direction: column;
+        align-items: center;    text-align: center
+    }
+}

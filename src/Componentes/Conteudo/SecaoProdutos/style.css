@@ -1,0 +1,90 @@
+#produtos {
+    width: 100%;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* está no final do código, mas vou colocar aqui em cima para fazer mais sentido e não ficar depois dos cards já que este ul faz parte do elemento pai */
+#produtos ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;  
+}
+
+#produtos li {
+    text-align: left;
+    margin: 5px;    
+}
+
+
+.galeriaDeProdutos {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardProduto {
+    background-color: #f6f6f6;
+    width: calc(50% - 15px);
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.cardProduto img {
+    width: 80%;
+    max-height: 150px;
+    margin: 30px auto;
+}
+
+.cardProduto h4 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.cardProduto p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+    #produtos {
+        padding: 60px 20px;
+    }
+
+    .cardProduto h4 {     
+        font-size: 22px;
+    }
+
+    .cardProduto img {
+        max-height: 100px;     
+    }
+
+    .cardProduto p {
+        font-size: 16px;
+    }
+
+}
+
+/* Media Querries */
+
+@media screen and (max-width: 550px) {
+    #produtos {        
+        padding: 0 10px;        
+    }
+
+    .cardProduto {
+        width: 100%;
+    }
+
+    #produtos ul {
+        text-align: left;
+    }
+}
+
